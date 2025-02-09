@@ -1,0 +1,204 @@
+/* Estilos generales */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom, #0000ff, #ff0000);
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+}
+
+.title {
+    color: white;
+    font-size: 3em;
+}
+
+.subtitle {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+/* Secciones */
+.section-title {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section-text {
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Animación de escritura */
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(50) infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Terminal */
+.terminal {
+    background-color: black;
+    color: lime;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.code-line {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Bloques de código flotantes */
+.floating-code {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.code-box {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Footer */
+.footer-text {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+<!--style de lenguaje kotlin-->
+        /* Estilos generales */
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.6;
+        margin: 20px;
+        background: linear-gradient(to bottom, #0000ff, #ff0000);
+        color: black;
+    }
+
+h1, h2 {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links a {
+    color: yellow;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+section {
+    margin-top: 40px;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+/* Estilos para el efecto de aparición de texto */
+.appearing-text {
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(20px); /* Desplazado hacia abajo */
+    transition: opacity 1s ease, transform 1s ease; /* Transición suave */
+}
+
+.appearing-text.appear {
+    opacity: 1; /* Visible al aparecer */
+    transform: translateY(0); /* En su posición original */
+}
+
+/* Estilos para los nombres de los frameworks */
+.framework-name {
+    font-weight: bold;
+}
